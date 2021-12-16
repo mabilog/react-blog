@@ -70,7 +70,6 @@ router.get('/:id', async (req, res) => {
 router.get('/', async (req, res) => {
   const username = req.query.user
   const categories = req.query.categories
-  // const username = req.query.user
 
   try {
     let posts 
