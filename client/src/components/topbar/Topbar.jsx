@@ -40,10 +40,12 @@ const Topbar = (props) => {
       <div className="topRight">
         {
           user ? (
-            <img 
-              className='topImage'
-              src={user.profile} 
-              alt="profile" />
+            <Link to='/settings'>
+              <img 
+                className='topImage'
+                src={user.profile} 
+                alt="profile" />
+            </Link>
           ) : (
             <ul className="topList">
               <li className="topListItem">
